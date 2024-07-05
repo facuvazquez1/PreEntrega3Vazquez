@@ -1,0 +1,36 @@
+// Estilos Navbar
+
+header {
+    background-color: $color-primario;
+    nav {
+        
+        a {
+            color: $color-claro;
+
+            &:hover{
+                color: $color-negro;
+            }
+            
+        }
+    
+        .nav-link {
+            color: $color-claro;
+
+            &:hover{
+            color: $color-negro;
+            }
+
+        }
+        .button-custom {
+            background-color: $color-claro; 
+            border-color: #ff6347;
+            color: #da1f1f; 
+        }
+        
+    }
+    
+}
+
+
+
+
