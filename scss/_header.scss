@@ -5,12 +5,16 @@ header {
     nav {
         
         a {
-            color: $color-claro;
+            color: $color-negro;
 
             &:hover{
-                color: $color-negro;
+                color: $color-claro;
             }
-            
+            img.icono-logo {
+                width: 30px;
+                height: 30px;
+
+            }
         }
     
         .nav-link {
@@ -21,15 +25,31 @@ header {
             }
 
         }
-        .button-custom {
-            background-color: $color-claro; 
-            border-color: #ff6347;
-            color: #da1f1f; 
-        }
+       
+        
+    }
+    button.button-custom {
+        background-image: url(../icon/menu-icon2.png);
+        background-color: $color-primario;
+        border: none;
+        background-size: contain;  
+        background-repeat: no-repeat;  
+        width: 30px;  
+        height: 30px;
+        background-position: center center;
+        &:focus,
+        &:active,
+        &.active {
+        outline: none;  
+        box-shadow: none;  
+       
+    }
         
     }
     
 }
+
+
 
 
 

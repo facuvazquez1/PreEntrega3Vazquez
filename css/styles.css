@@ -10,14 +10,22 @@ body {
   background-color: #F1E8DE;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   background-color: #C7A17A;
 }
 header nav a {
-  color: #F1E8DE;
+  color: #0b090a;
 }
 header nav a:hover {
-  color: #0b090a;
+  color: #F1E8DE;
+}
+header nav a img.icono-logo {
+  width: 30px;
+  height: 30px;
 }
 header nav .nav-link {
   color: #F1E8DE;
@@ -25,10 +33,133 @@ header nav .nav-link {
 header nav .nav-link:hover {
   color: #0b090a;
 }
-header nav .button-custom {
-  background-color: #F1E8DE;
-  border-color: #ff6347;
-  color: #da1f1f;
+header button.button-custom {
+  background-image: url(../icon/menu-icon2.png);
+  background-color: #C7A17A;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-position: center center;
+}
+header button.button-custom:focus, header button.button-custom:active, header button.button-custom.active {
+  outline: none;
+  box-shadow: none;
+}
+
+footer.pie-pagina {
+  width: 100%;
+  background-color: #9A8C7D;
+}
+footer.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 45px 0px;
+}
+footer.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer.pie-pagina .grupo-1 .box figure img {
+  width: 150px;
+}
+footer.pie-pagina .grupo-1 .box figure h3 {
+  color: #0b090a;
+  margin-top: 5px;
+}
+footer.pie-pagina .grupo-1 .box h2 {
+  color: #F1E8DE;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+footer.pie-pagina .grupo-1 .box .red-social img {
+  width: 40px;
+  display: inline-block;
+  transition: transform 0.3s, opacity 0.3s;
+}
+footer.pie-pagina .grupo-1 .box .red-social img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+footer.pie-pagina .grupo-1 .box .red-social a {
+  margin-right: 10px;
+}
+footer.pie-pagina .grupo-2 {
+  background-color: #0b090a;
+  color: #F1E8DE;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  footer.pie-pagina .grupo-1 {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 30px 0px;
+  }
+}
+section.banner {
+  background-image: linear-gradient(100deg, #000000, rgba(0, 0, 0, 0.1254901961)), url(../img/generales/cafe1.jpg);
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+section.banner .content-banner {
+  max-width: 20rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+section.banner .content-banner h2 {
+  font-family: "merriweather", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #C7A17A;
+  margin-bottom: 1rem;
+}
+section.banner .content-banner p {
+  color: #F1E8DE;
+  font-size: 1rem;
+  font-weight: 300;
+}
+section.banner .content-banner a {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #C7A17A;
+  color: #0b090a;
+  display: inline-block;
+  padding: 15px 15px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+section.banner .content-banner a:hover {
+  background-color: #9A8C7D;
+  color: #F1E8DE;
+}
+
+.barra-separacion {
+  width: 100%;
+  height: 65px;
+  background-color: #0b090a;
+  border-bottom: 1px solid #C7A17A;
+  border-top: 1px solid #C7A17A;
+}
+.barra-separacion h2.sobreNosotros {
+  color: #C7A17A;
+  text-align: center;
+  padding: 18px;
+  font-family: "merriweather", sans-serif;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
