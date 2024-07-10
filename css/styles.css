@@ -51,6 +51,7 @@ header button.button-custom:focus, header button.button-custom:active, header bu
 footer.pie-pagina {
   width: 100%;
   background-color: #9A8C7D;
+  border-top: 1px solid #0b090a;
 }
 footer.pie-pagina .grupo-1 {
   width: 100%;
@@ -113,13 +114,14 @@ section.banner {
   width: 100%;
   background-size: cover;
   background-position: center;
+  border-bottom: 1px solid #0b090a;
 }
 section.banner .content-banner {
   max-width: 20rem;
   margin: 0 auto;
   padding: 10rem 0;
 }
-section.banner .content-banner h2 {
+section.banner .content-banner h1 {
   font-family: "merriweather", sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
@@ -147,19 +149,62 @@ section.banner .content-banner a:hover {
   color: #F1E8DE;
 }
 
-.barra-separacion {
-  width: 100%;
-  height: 65px;
-  background-color: #0b090a;
-  border-bottom: 1px solid #C7A17A;
-  border-top: 1px solid #C7A17A;
+@media (min-width: 768px) {
+  section.banner {
+    height: 40rem;
+    width: 100%;
+  }
+  section.banner .content-banner {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 10rem 0;
+  }
 }
-.barra-separacion h2.sobreNosotros {
-  color: #C7A17A;
-  text-align: center;
-  padding: 18px;
+div.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 30px 30px;
+}
+div.cards-container .card {
+  background-color: #C7A17A;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease-in-out;
+}
+div.cards-container .card:hover {
+  transform: translateY(-5px);
+}
+div.cards-container .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+div.cards-container .card .card-content {
+  padding: 20px;
+}
+div.cards-container .card .card-content h3 {
+  margin-top: 0;
   font-family: "merriweather", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
+  color: #0b090a;
+}
+div.cards-container .card .card-content p {
+  margin-bottom: 0;
+  color: #0b090a;
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  div.cards-container .cards-container {
+    flex-wrap: nowrap;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
