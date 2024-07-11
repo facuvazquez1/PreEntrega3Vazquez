@@ -230,7 +230,6 @@ main.menu {
   margin-bottom: 20px;
 }
 
-/* Grid and product item styles */
 .product-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -284,6 +283,12 @@ main.menu {
   padding: 10px;
   border-radius: 8px;
   width: 100%;
+}
+.product-info p.product-name {
+  font-weight: 700;
+}
+.product-info p.product-price {
+  font-family: "merriweather", sans-serif;
 }
 
 .product-name,

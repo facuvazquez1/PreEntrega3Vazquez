@@ -22,7 +22,7 @@ main.menu {
     }
 }
 
-/* Grid and product item styles */
+
 .product-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -76,6 +76,12 @@ main.menu {
     padding: 10px;
     border-radius: 8px;
     width: 100%;
+    p.product-name {
+        font-weight: 700;
+    }
+    p.product-price {
+        font-family: $fuente-secundaria;
+    }
    
 }
 
