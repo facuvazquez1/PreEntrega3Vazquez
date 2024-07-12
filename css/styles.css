@@ -358,7 +358,7 @@ main.main__local p.parrafo-local {
 .info h2 {
   margin-top: 15px;
   color: #0b090a;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "merriweather", sans-serif;
 }
 .info p {
@@ -402,6 +402,94 @@ main.main__local p.parrafo-local {
   }
   .local img, .info {
     width: 100%;
+  }
+}
+.contact-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+}
+.contact-main .title-contact {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid #95795C;
+  border-top: 1px solid #95795C;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.contact-main .contact-left,
+.contact-main .contact-right {
+  width: 100%;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.contact-main .contact-left {
+  order: 1;
+}
+.contact-main .contact-right {
+  order: 2;
+}
+.contact-main .contact-info {
+  text-align: left;
+}
+.contact-main .contact-info p {
+  margin: 10px 0;
+}
+.contact-main .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-main .contact-form form {
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+.contact-main .contact-form form label {
+  margin-top: 10px;
+}
+.contact-main .contact-form form input,
+.contact-main .contact-form form select,
+.contact-main .contact-form form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+.contact-main .contact-form form textarea {
+  resize: vertical;
+}
+.contact-main .contact-form form button {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #C7A17A;
+  color: #0b090a;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-main .contact-form form button:hover {
+  background-color: #9A8C7D;
+  color: #F1E8DE;
+}
+@media (max-width: 768px) {
+  .contact-main .contact-main {
+    flex-direction: column;
+  }
+  .contact-main .contact-left,
+  .contact-main .contact-right {
+    max-width: 100%;
+    padding: 10px;
   }
 }
 
