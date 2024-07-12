@@ -211,9 +211,15 @@ main.menu {
   padding: 20px;
 }
 
-.intro {
+.intro p {
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: "merriweather", sans-serif;
+}
+.intro h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-family: "poppins", sans-serif;
 }
 
 .product-section {
@@ -296,21 +302,23 @@ main.menu {
   margin: 5px 0;
 }
 
-h1.title-local {
-  margin-top: 20px;
-  text-align: center;
-  justify-content: center;
-}
-
-p.parrafo-local {
-  text-align: center;
-  justify-content: center;
-}
-
 main.main__local {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+}
+main.main__local h1.title-local {
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-size: 55px;
+}
+main.main__local p.parrafo-local {
+  text-align: center;
+  justify-content: center;
+  font-family: "merriweather", sans-serif;
 }
 
 .container-local {
@@ -319,26 +327,28 @@ main.main__local {
   flex-wrap: wrap;
   margin: 10px auto;
   width: calc(100% - 20px);
+  border-top: 1px solid #95795C;
 }
 
 .local {
   display: flex;
   margin: 20px auto;
-  border: 1px solid #ccc;
+  border: 1px solid #95795C;
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
+  background-color: #C7A17A;
 }
 
 .local img {
-  width: 50%;
+  width: 40%;
   height: auto;
   object-fit: contain;
 }
 
 .info {
   padding: auto;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -347,16 +357,19 @@ main.main__local {
 }
 .info h2 {
   margin-top: 15px;
+  color: #0b090a;
+  font-weight: 600;
+  font-family: "merriweather", sans-serif;
 }
 .info p {
   margin: 0 0 10px;
-  color: #666;
+  color: #F1E8DE;
 }
 
 .maps-button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
+  background-color: #F1E8DE;
+  color: #0b090a;
+  border: 1px solid #95795C;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -367,9 +380,12 @@ main.main__local {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
-
 .maps-button:hover {
-  background-color: #0056b3;
+  background-color: #95795C;
+  color: #F1E8DE;
+}
+.maps-button::after {
+  color: #F1E8DE;
 }
 
 @media (max-width: 768px) {

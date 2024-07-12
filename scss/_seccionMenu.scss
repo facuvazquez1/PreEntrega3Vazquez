@@ -3,8 +3,17 @@ main.menu {
 }
 
 .intro {
-    text-align: center;
-    margin-bottom: 20px;
+    p {
+        text-align: center;
+        margin-bottom: 5px;
+        font-family: $fuente-secundaria;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: $fuente-principal;  
+    }
+   
 }
 
 .product-section {

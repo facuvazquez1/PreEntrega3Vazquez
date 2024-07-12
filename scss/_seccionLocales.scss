@@ -1,20 +1,23 @@
 
-
-h1.title-local {
-    margin-top: 20px;
-    text-align: center;
-    justify-content: center;
-}
-p.parrafo-local {
-    text-align: center;
-    justify-content: center;
-}
-
-
 main.main__local {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    h1.title-local {
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        font-family: $fuente-principal;
+        font-weight: 600;
+        font-size: 55px;
+    }
+    p.parrafo-local {
+        text-align: center;
+        justify-content: center;
+        font-family: $fuente-secundaria;
+        
+       
+    }
    
 }
 .container-local {
@@ -23,24 +26,27 @@ main.main__local {
     flex-wrap: wrap;
     margin: 10px auto;
     width: calc(100% - 20px); 
+    border-top: 1px solid $color-secundario;
+    
 }
 .local {
     display: flex;
     margin: 20px auto;
-    border: 1px solid #ccc;
+    border: 1px solid $color-secundario;
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
+    background-color: $color-primario;
 }
 .local img {
-    width: 50%;
+    width: 40%;
     height: auto;
     object-fit: contain;
     
 }
 .info {
     padding: auto;
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,19 +54,21 @@ main.main__local {
     object-fit: contain;
     h2 {
         margin-top: 15px;
-
+        color: $color-negro;
+        font-weight: 600;
+        font-family: $fuente-secundaria;
     }
     p {
         margin: 0 0 10px;
-        color: #666;  
+        color: $color-claro;  
 
     }
 }
 
 .maps-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
+    background-color: $color-claro;
+    color: $color-negro;
+    border: 1px solid $color-secundario;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -70,11 +78,15 @@ main.main__local {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    &:hover {
+        background-color: $color-secundario;
+        color: $color-claro;
+    }
+    &::after {
+        color: $color-claro;
+    }
 }
 
-.maps-button:hover {
-    background-color: #0056b3;
-}
 
 
 
