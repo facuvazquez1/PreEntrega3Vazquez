@@ -1,0 +1,29 @@
+.faq-section {
+    @include center-content();
+
+    h1 {
+        padding: 10px;
+        border-top: 1px solid $color-secundario;
+        border-bottom: 1px solid $color-secundario;
+        font-weight: 900;
+        
+    }
+
+    .faq-item {
+        background-color: $color-secundario;
+        color: $color-claro;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        @include responsive-text();
+    }
+}

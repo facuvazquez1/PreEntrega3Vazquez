@@ -160,53 +160,6 @@ section.banner .content-banner a:hover {
     padding: 10rem 0;
   }
 }
-div.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 30px 30px;
-}
-div.cards-container .card {
-  background-color: #C7A17A;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 350px;
-  transition: transform 0.3s ease-in-out;
-}
-div.cards-container .card:hover {
-  transform: translateY(-5px);
-}
-div.cards-container .card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px 10px 0 0;
-}
-div.cards-container .card .card-content {
-  padding: 20px;
-}
-div.cards-container .card .card-content h3 {
-  margin-top: 0;
-  font-family: "merriweather", sans-serif;
-  font-size: 24px;
-  color: #0b090a;
-}
-div.cards-container .card .card-content p {
-  margin-bottom: 0;
-  color: #0b090a;
-  font-size: 16px;
-  line-height: 1.5;
-}
-@media (min-width: 768px) {
-  div.cards-container .cards-container {
-    flex-wrap: nowrap;
-  }
-}
-
 main.menu {
   padding: 20px;
 }
@@ -490,6 +443,68 @@ main.main__local p.parrafo-local {
   .contact-main .contact-right {
     max-width: 100%;
     padding: 10px;
+  }
+}
+
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.faq-section h1 {
+  padding: 10px;
+  border-top: 1px solid #95795C;
+  border-bottom: 1px solid #95795C;
+  font-weight: 900;
+}
+.faq-section .faq-item {
+  background-color: #95795C;
+  color: #F1E8DE;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.faq-section .faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.faq-section .faq-item h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+.faq-section .faq-item .faq-item h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.faq-section .faq-item .faq-item h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  transform: translateX(-50%);
+}
+.faq-section .faq-item .faq-item p {
+  font-size: 1em;
+  margin: 0;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .faq-section .faq-item h1 {
+    font-size: 2em;
+  }
+  .faq-section .faq-item .faq-item h2 {
+    font-size: 1.25em;
+  }
+  .faq-section .faq-item .faq-item p {
+    font-size: 0.9em;
   }
 }
 
