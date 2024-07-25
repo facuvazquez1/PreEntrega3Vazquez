@@ -1,148 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Disfruta de los mejores granos de café en nuestra cafetería. Ofrecemos tecnología de punta, un ambiente acogedor y el personal más amable para brindarte la mejor experiencia. ¡Visítanos hoy y saborea la diferencia!"
-    />
-    <meta
-      name="keywords"
-      content="cafetería, café de alta calidad, granos de café, tecnología de café, personal amable, ambiente acogedor, mejor café, bebidas calientes, pasteles, repostería, snacks, experiencia única, café artesanal, café especial, barista, café, cafe"
-    />
-    <title>Aires Coffee</title>
-    <link
-      rel="shortcut icon"
-      href="./icon/logocafetera.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-
-  <body>
-    <header class="navbar navbar-expand-md">
-      <nav class="container-fluid mx-4">
-        <!-- Logo -->
-        <a class="navbar-brand" href="./index.html">
-          <img
-            src="./icon/logocafetera.png"
-            alt="logo cafe"
-            class="icono-logo"
-          />
-          <span>Aires Coffee</span>
-        </a>
-
-        <!-- Boton menu -->
-        <button
-          class="navbar-toggler button-custom"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu-desplegable"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Elemntos menu colapsable -->
-        <div class="collapse navbar-collapse" id="menu-desplegable">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/menu.html">Menú</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/locales.html">Locales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/faq.html">FAQ</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Banner principal -->
-    <section class="banner">
-      <div class="content-banner">
-        <h1>Despierta tus sentidos con nuestro café artesanal</h1>
-        <p>Tu lugar de encuentro con el mejor café y ambiente</p>
-        <a href="./pages/locales.html"> Localizar Tienda </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Disfruta de los mejores granos de café en nuestra cafetería. Ofrecemos tecnología de punta, un ambiente acogedor y el personal más amable para brindarte la mejor experiencia. ¡Visítanos hoy y saborea la diferencia!">
+  <meta name="keywords" content="cafetería, café de alta calidad, granos de café, tecnología de café, personal amable, ambiente acogedor, mejor café, bebidas calientes, pasteles, repostería, snacks, experiencia única, café artesanal, café especial, barista, café, cafe">
+  <title>Aires Coffee</title>
+  <link rel="shortcut icon" href="./icon/logocafetera.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <!-- Inicio de Navbar -->
+  <header class="navbar navbar-expand-md">
+    <nav class="container-fluid mx-4">
+      <a class="navbar-brand" href="./index.html"><img src="./icon/logocafetera.png" alt="logo cafe" class="icono-logo"> <span>Aires Coffee</span></a>
+      <div class="collapse navbar-collapse" id="menu-desplegable">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/menu.html">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/locales.html">Locales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/faq.html">FAQ</a>
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <!-- Inicio de footer -->
-    <footer class="pie-pagina">
-      <div class="grupo-1">
-        <div class="box">
-          <figure>
-            <a href="#">
-              <img src="./icon/logocafetera.png " alt="logo cafetera" />
-              <h3>Aires Coffee</h3>
-            </a>
-          </figure>
-        </div>
-        <div class="box">
-          <h2>Sobre Nosotros</h2>
-          <p>
-            Somos apasionados del café y nos dedicamos a ofrecer la mejor
-            experiencia. Únete a nuestra comunidad y disfruta.
-          </p>
-          <p>
-            Explora nuestros productos únicos y sumérgete en el mundo del café
-            artesanal. Cada taza cuenta una historia.
-          </p>
-        </div>
-        <div class="box">
-          <h2>Síguenos</h2>
-          <div class="red-social">
-            <a href="https://www.facebook.com/"
-              ><img src="./icon/logo-facebook.png" alt="logo facebook"
-            /></a>
-            <a href="https://www.instagram.com/"
-              ><img src="./icon/logo-instagram.png" alt="logo intagram"
-            /></a>
-            <a href="https://ar.linkedin.com/"
-              ><img src="./icon/logo-linkedin.png" alt="logo linkedin"
-            /></a>
-          </div>
+    </nav>
+  </header>
+  <!-- Contenido Principal -->
+  <section class="banner">
+    <div class="content-banner">
+      <h1>Despierta tus sentidos con nuestro café artesanal</h1>
+      <p>Tu lugar de encuentro con el mejor café y ambiente</p><a href="./pages/locales.html">Localizar Tienda</a>
+    </div>
+  </section>
+  <!-- Inicio de footer -->
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#"><img src="./icon/logocafetera.png" alt="logo cafetera">
+          <h3>Aires Coffee</h3></a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos apasionados del café y nos dedicamos a ofrecer la mejor experiencia. Únete a nuestra comunidad y disfruta.</p>
+        <p>Explora nuestros productos únicos y sumérgete en el mundo del café artesanal. Cada taza cuenta una historia.</p>
+      </div>
+      <div class="box">
+        <h2>Síguenos</h2>
+        <div class="red-social">
+          <a href="https://www.facebook.com/"><img src="./icon/logo-facebook.png" alt="logo facebook"></a> <a href="https://www.instagram.com/"><img src="./icon/logo-instagram.png" alt="logo intagram"></a> <a href="https://ar.linkedin.com/"><img src="./icon/logo-linkedin.png" alt="logo linkedin"></a>
         </div>
       </div>
-      <div class="grupo-2">
-        <small
-          >&copy; 2024 <b>Aires Coffee</b> - Todos los Derechos
-          Reservados.</small
-        >
-      </div>
-    </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+    <div class="grupo-2">
+      <small>© 2024 <b>Aires Coffee</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
 </html>
