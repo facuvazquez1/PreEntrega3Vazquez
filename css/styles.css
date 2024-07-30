@@ -33,17 +33,17 @@ header nav .nav-link {
 header nav .nav-link:hover {
   color: #0b090a;
 }
-header button.button-custom {
-  background-image: url(../icon/menu-icon2.png);
+header nav .navbar-toggler {
   background-color: #C7A17A;
   border: none;
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 30px;
   height: 30px;
+  background-image: url(../icon/menu-icon2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center center;
 }
-header button.button-custom:focus, header button.button-custom:active, header button.button-custom.active {
+header nav .navbar-toggler:focus, header nav .navbar-toggler:active, header nav .navbar-toggler.active {
   outline: none;
   box-shadow: none;
 }
@@ -359,8 +359,8 @@ main.main__local p.parrafo-local {
 }
 .contact-main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 20px;
   text-align: center;
 }
@@ -369,8 +369,6 @@ main.main__local p.parrafo-local {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  position: relative;
-  z-index: 1;
   border-bottom: 1px solid #95795C;
   border-top: 1px solid #95795C;
   font-weight: 700;
@@ -379,49 +377,54 @@ main.main__local p.parrafo-local {
 .contact-main .contact-left,
 .contact-main .contact-right {
   width: 100%;
-  max-width: 50%;
+  max-width: 600px;
   box-sizing: border-box;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .contact-main .contact-left {
   order: 1;
 }
+.contact-main .contact-left .contact-info p {
+  margin: 10px 0;
+}
 .contact-main .contact-right {
   order: 2;
 }
-.contact-main .contact-info {
-  text-align: left;
-}
-.contact-main .contact-info p {
-  margin: 10px 0;
-}
-.contact-main .contact-form {
+.contact-main .contact-right .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.contact-main .contact-form form {
   width: 100%;
-  max-width: 400px;
-  text-align: left;
 }
-.contact-main .contact-form form label {
+.contact-main .contact-right .contact-form form {
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  margin: 0 auto;
+}
+.contact-main .contact-right .contact-form form label {
+  display: block;
   margin-top: 10px;
 }
-.contact-main .contact-form form input,
-.contact-main .contact-form form select,
-.contact-main .contact-form form textarea {
+.contact-main .contact-right .contact-form form input,
+.contact-main .contact-right .contact-form form select,
+.contact-main .contact-right .contact-form form textarea {
+  display: block;
   margin-top: 5px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
 }
-.contact-main .contact-form form textarea {
+.contact-main .contact-right .contact-form form textarea {
   resize: vertical;
 }
-.contact-main .contact-form form button {
-  margin-top: 10px;
+.contact-main .contact-right .contact-form form button {
+  margin-top: 20px;
   padding: 15px;
   background-color: #C7A17A;
   color: #0b090a;
@@ -431,18 +434,18 @@ main.main__local p.parrafo-local {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.contact-main .contact-form form button:hover {
+.contact-main .contact-right .contact-form form button:hover {
   background-color: #9A8C7D;
   color: #F1E8DE;
 }
 @media (max-width: 768px) {
-  .contact-main .contact-main {
-    flex-direction: column;
-  }
   .contact-main .contact-left,
   .contact-main .contact-right {
     max-width: 100%;
     padding: 10px;
+  }
+  .contact-main .contact-right .contact-form form {
+    padding: 0 20px;
   }
 }
 

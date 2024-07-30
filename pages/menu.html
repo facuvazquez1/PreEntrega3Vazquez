@@ -1,192 +1,300 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Descubre nuestro delicioso menú de café y comidas. Ofrecemos una variedad de cafés artesanales, pasteles frescos y snacks deliciosos para todos los gustos.">
-  <meta name="keywords" content="menú de café, café artesanal, pasteles, repostería, snacks, bebidas calientes, comidas, cafetería, delicias, especialidades">
-  <title>Aires Coffee - Menu</title>
-  <link rel="shortcut icon" href="../icon/logocafetera.png" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre nuestro delicioso menú de café y comidas. Ofrecemos una variedad de cafés artesanales, pasteles frescos y snacks deliciosos para todos los gustos."
+    />
+    <meta
+      name="keywords"
+      content="menú de café, café artesanal, pasteles, repostería, snacks, bebidas calientes, comidas, cafetería, delicias, especialidades"
+    />
+    <title>Aires Coffee - Menu</title>
+    <link
+      rel="shortcut icon"
+      href="../icon/logocafetera.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Inicio de Navbar -->
+    <header class="navbar navbar-expand-md">
+      <nav class="container-fluid mx-4">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            src="../icon/logocafetera.png"
+            alt="logo cafe"
+            class="icono-logo"
+          />
+          <span>Aires Coffee</span>
+        </a>
 
-  <!-- Inicio de Navbar -->
-  <header class="navbar navbar-expand-md">
-    <nav class="container-fluid mx-4">
-      <a class="navbar-brand" href="../index.html"><img src="../icon/logocafetera.png" alt="logo cafe" class="icono-logo"> <span>Aires Coffee</span></a>
-      <div class="collapse navbar-collapse" id="menu-desplegable">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Menú</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./locales.html">Locales</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./faq.html">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+        <!-- Botón del menú hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-desplegable"
+          aria-controls="menu-desplegable"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- Contenido Principal -->
-  <main class="menu">
-    <div class="intro">
-      <p>¡Disfrútalos!</p>
-      <h1>Conoce nuestras bebidas y alimentos de temporada</h1>
-    </div>
-    <section class="menu-section">
-      <h2 class="product-section">Bebidas</h2>
-      <div class="product-grid">
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/cafe-caliente.png" alt="foto de cafe caliente"></div>
-          <div class="product-info">
-            <p class="product-name">Café</p>
-            <p class="product-price">$2500</p>
-          </div>
+        <div class="collapse navbar-collapse" id="menu-desplegable">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./locales.html">Locales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./faq.html">FAQ</a>
+            </li>
+          </ul>
         </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/americano.png" alt="foto de cafe americano"></div>
-          <div class="product-info">
-            <p class="product-name">Americano</p>
-            <p class="product-price">$2700</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/cafes-helados.png" alt="foto de cafe helado"></div>
-          <div class="product-info">
-            <p class="product-name">Café Helado</p>
-            <p class="product-price">$3200</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/frapuccino.png" alt="foto de fapuccino"></div>
-          <div class="product-info">
-            <p class="product-name">Frapuccino</p>
-            <p class="product-price">$3500</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/macchiato-helado.png" alt="foto de macchiato"></div>
-          <div class="product-info">
-            <p class="product-name">Macchiato Helado</p>
-            <p class="product-price">$3200</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/te-caliente.png" alt="foto de te caliente"></div>
-          <div class="product-info">
-            <p class="product-name">Té Caliente</p>
-            <p class="product-price">$2800</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/te-helado.png" alt="foto de te helado"></div>
-          <div class="product-info">
-            <p class="product-name">Té Helado</p>
-            <p class="product-price">$2800</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="menu-section">
-      <h2 class="product-section">Bakery</h2>
-      <div class="product-grid">
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/brownie.png" alt="foto de brownie"></div>
-          <div class="product-info">
-            <p class="product-name">Brownie</p>
-            <p class="product-price">$3800</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/muffin.png" alt="foto de muffin"></div>
-          <div class="product-info">
-            <p class="product-name">Muffin</p>
-            <p class="product-price">$4000</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/dona.png" alt="foto de dona"></div>
-          <div class="product-info">
-            <p class="product-name">Dona</p>
-            <p class="product-price">$4000</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="menu-section">
-      <h2 class="product-section">Otras variedades</h2>
-      <div class="product-grid">
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/sandwich.png" alt="foto de sandwich"></div>
-          <div class="product-info">
-            <p class="product-name">Sandwich</p>
-            <p class="product-price">$4000</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/medialunas.png" alt="foto de medialunas"></div>
-          <div class="product-info">
-            <p class="product-name">Medialuna</p>
-            <p class="product-price">$2500</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/chipa.png" alt="foto de chipa"></div>
-          <div class="product-info">
-            <p class="product-name">Chipa</p>
-            <p class="product-price">$800 xU</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-image-wrapper"><img src="../img/producto/scon.png" alt="foto de scon"></div>
-          <div class="product-info">
-            <p class="product-name">Scon</p>
-            <p class="product-price">$2000</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+      </nav>
+    </header>
 
-  <!-- Inicio de footer -->
-  <footer class="pie-pagina">
-    <div class="grupo-1">
-      <div class="box">
-        <figure>
-          <a href="#"><img src="../icon/logocafetera.png" alt="logo cafetera">
-          <h3>Aires Coffee</h3></a>
-        </figure>
+    <!-- Contenido Principal -->
+    <main class="menu">
+      <div class="intro">
+        <p>¡Disfrútalos!</p>
+        <h1>Conoce nuestras bebidas y alimentos de temporada</h1>
       </div>
-      <div class="box">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos apasionados del café y nos dedicamos a ofrecer la mejor experiencia. Únete a nuestra comunidad y disfruta.</p>
-        <p>Explora nuestros productos únicos y sumérgete en el mundo del café artesanal. Cada taza cuenta una historia.</p>
-      </div>
-      <div class="box">
-        <h2>Síguenos</h2>
-        <div class="red-social">
-          <a href="https://www.facebook.com/"><img src="../icon/logo-facebook.png" alt="logo facebook"></a> <a href="https://www.instagram.com/"><img src="../icon/logo-instagram.png" alt="logo intagram"></a> <a href="https://ar.linkedin.com/"><img src="../icon/logo-linkedin.png" alt="logo linkedin"></a>
+      <section class="menu-section">
+        <h2 class="product-section">Bebidas</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img
+                src="../img/producto/cafe-caliente.png"
+                alt="foto de cafe caliente"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Café</p>
+              <p class="product-price">$2500</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img
+                src="../img/producto/americano.png"
+                alt="foto de cafe americano"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Americano</p>
+              <p class="product-price">$2700</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img
+                src="../img/producto/cafes-helados.png"
+                alt="foto de cafe helado"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Café Helado</p>
+              <p class="product-price">$3200</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img
+                src="../img/producto/frapuccino.png"
+                alt="foto de fapuccino"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Frapuccino</p>
+              <p class="product-price">$3500</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img
+                src="../img/producto/macchiato-helado.png"
+                alt="foto de macchiato"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Macchiato Helado</p>
+              <p class="product-price">$3200</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img
+                src="../img/producto/te-caliente.png"
+                alt="foto de te caliente"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Té Caliente</p>
+              <p class="product-price">$2800</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img
+                src="../img/producto/te-helado.png"
+                alt="foto de te helado"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Té Helado</p>
+              <p class="product-price">$2800</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="menu-section">
+        <h2 class="product-section">Bakery</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="../img/producto/brownie.png" alt="foto de brownie" />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Brownie</p>
+              <p class="product-price">$3800</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="../img/producto/muffin.png" alt="foto de muffin" />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Muffin</p>
+              <p class="product-price">$4000</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="../img/producto/dona.png" alt="foto de dona" />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Dona</p>
+              <p class="product-price">$4000</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="menu-section">
+        <h2 class="product-section">Otras variedades</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="../img/producto/sandwich.png" alt="foto de sandwich" />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Sandwich</p>
+              <p class="product-price">$4000</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img
+                src="../img/producto/medialunas.png"
+                alt="foto de medialunas"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Medialuna</p>
+              <p class="product-price">$2500</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="../img/producto/chipa.png" alt="foto de chipa" />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Chipa</p>
+              <p class="product-price">$800 xU</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="../img/producto/scon.png" alt="foto de scon" />
+            </div>
+            <div class="product-info">
+              <p class="product-name">Scon</p>
+              <p class="product-price">$2000</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Inicio de footer -->
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#"
+              ><img src="../icon/logocafetera.png" alt="logo cafetera" />
+              <h3>Aires Coffee</h3></a
+            >
+          </figure>
+        </div>
+        <div class="box">
+          <h2>Sobre Nosotros</h2>
+          <p>
+            Somos apasionados del café y nos dedicamos a ofrecer la mejor
+            experiencia. Únete a nuestra comunidad y disfruta.
+          </p>
+          <p>
+            Explora nuestros productos únicos y sumérgete en el mundo del café
+            artesanal. Cada taza cuenta una historia.
+          </p>
+        </div>
+        <div class="box">
+          <h2>Síguenos</h2>
+          <div class="red-social">
+            <a href="https://www.facebook.com/"
+              ><img src="../icon/logo-facebook.png" alt="logo facebook"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="../icon/logo-instagram.png" alt="logo intagram"
+            /></a>
+            <a href="https://ar.linkedin.com/"
+              ><img src="../icon/logo-linkedin.png" alt="logo linkedin"
+            /></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="grupo-2">
-      <small>© 2024 <b>Aires Coffee</b> - Todos los Derechos Reservados.</small>
-    </div>
-  </footer>
+      <div class="grupo-2">
+        <small
+          >© 2024 <b>Aires Coffee</b> - Todos los Derechos Reservados.</small
+        >
+      </div>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

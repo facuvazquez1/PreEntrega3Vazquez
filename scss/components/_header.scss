@@ -1,53 +1,50 @@
 // Estilos Navbar
-
 header {
     background-color: $color-primario;
+  
     nav {
-        
-        a {
-            color: $color-negro;
-
-            &:hover{
-                color: $color-claro;
-            }
-            img.icono-logo {
-                width: 30px;
-                height: 30px;
-
-            }
+      a {
+        color: $color-negro;
+  
+        &:hover {
+          color: $color-claro;
         }
-    
-        .nav-link {
-            color: $color-claro;
-
-            &:hover{
-            color: $color-negro;
-            }
-
+  
+        img.icono-logo {
+          width: 30px;
+          height: 30px;
         }
-       
-        
-    }
-    button.button-custom {
-        background-image: url(../icon/menu-icon2.png);
+      }
+  
+      .nav-link {
+        color: $color-claro;
+  
+        &:hover {
+          color: $color-negro;
+        }
+      }
+  
+      // Estilos para el botón del menú hamburguesa
+      .navbar-toggler {
         background-color: $color-primario;
         border: none;
-        background-size: contain;  
-        background-repeat: no-repeat;  
-        width: 30px;  
+        width: 30px;
         height: 30px;
+        background-image: url(../icon/menu-icon2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
         background-position: center center;
+  
         &:focus,
         &:active,
         &.active {
-        outline: none;  
-        box-shadow: none;  
-       
+          outline: none;
+          box-shadow: none;
+        }
+      }
     }
-        
-    }
-    
-}
+  }
+  
 
 
 
