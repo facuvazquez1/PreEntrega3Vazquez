@@ -15,4 +15,4 @@ Aires Coffee es un sitio web para una cafetería que ofrece una experiencia de u
 ## Links del proyecto
 - Repositorio en GitHub: https://github.com/facuvazquez1/ProyectoFinalVazquez
 - GitHub Pages: https://facuvazquez1.github.io/ProyectoFinalVazquez/
-- Sitio en el servidor: #
+- Sitio en el servidor: http://airescoffees.infinityfreeapp.com/
